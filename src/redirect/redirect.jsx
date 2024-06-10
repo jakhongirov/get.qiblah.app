@@ -11,12 +11,12 @@ function Redirect() {
 		}
 		// Check if the user is using an Android device
 		else if (/Android/i.test(navigator.userAgent)) {
-			window.location.href = `https://play.google.com/store/apps/details?id=uz.behad.qiblah.namoz&pcampaignid=${campaign_id}`; // Replace with your Google Play link and package name
+			window.location.href = `https://play.google.com/store/apps/details?id=uz.behad.qiblah.namoz&pcampaignid=${campaign_id ? campaign_id : "noparam"}`; // Replace with your Google Play link and package name
 		}
 		// If the device is not iOS or Android, you can handle it differently or redirect to a generic page
 		else {
 			// Redirect to a generic page
-			window.location.href = `https://play.google.com/store/apps/details?id=uz.behad.qiblah.namoz&pcampaignid=${campaign_id}`;
+			window.location.href = `https://play.google.com/store/apps/details?id=uz.behad.qiblah.namoz&pcampaignid=${campaign_id ? campaign_id : "noparam"}`;
 		}
 	}, [campaign_id]);
 
