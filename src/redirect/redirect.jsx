@@ -6,7 +6,7 @@ function Redirect() {
 
 	useEffect(() => {
 		if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-			window.location.href = 'https://qiblah.app';
+			window.location.href = 'https://apps.apple.com/app/apple-store/id6670479101?pt=127307468&ct=appShares&mt=8';
 		} else if (/Android/i.test(navigator.userAgent)) {
 			if (param1 && param2) {
 				if (
